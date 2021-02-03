@@ -1,0 +1,12 @@
+image:
+   file: Dockerfile
+ 
+ ports:
+   port: 8080
+   onOpen: notify
+   port: 6080
+   onOpen: notify
+   port: 3000
+   onOpen: notify
+   
+   
