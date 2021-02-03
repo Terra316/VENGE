@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
 libgl1
 
 RUN useradd --create-home --shell /bin/bash user \
-&& echo "user ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/user
+&& echo "user ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers/user
  
 USER user
 
