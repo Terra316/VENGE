@@ -1,0 +1,16 @@
+
+add_library(Core)
+
+find_package(Vulkan REQUIRED)
+if(Vulkan_FOUND)
+    target_link_libraries(Core ${Vulkan_LIBRARIES})
+    include_directories(${Vulkan_INCLUDE_DIRS})
+else(Vulkan_FOUND)
+    find_package(OpenGL REQUIRED)
+    if(OPENGL_OpenGL_FOUND)
+        target_link_libraries(Core ${OPENGL_LIBRARIES})
+        include_directories(${OPENGL_INCLUDE_DIRS})
+    else(OPENGL_OpenGL_FOUND)
+        message("VENGE only supports Vulkan or OpenGL, both of which are apparently missing. Please install one.")
+    endif(OPENGL_OpenGL_FOUND)
+endif(Vulkan_FOUND)
