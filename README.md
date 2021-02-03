@@ -1,6 +1,6 @@
 # VENGE
 
-VENGE (Vessel ENGinE) is a game engine written mainly in C++ that will eventually support Windows and Mac but currently supports only Linux. The ``master`` branch is currently the development brench but will eventually turn into the ``latest`` branch. No idea why I am writing this, because nobody else can see it as of right now. Anyway, moving on.
+VENGE (Vessel ENGinE) is a game engine written mainly in C++ that will eventually support Windows and Mac but currently supports only Linux. The ``main`` branch is currently the development brench but will eventually turn into the ``latest`` branch. No idea why I am writing this, because nobody else can see it as of right now. Anyway, moving on.
 
 ## Goals:
 
