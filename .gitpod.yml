@@ -1,15 +1,15 @@
 image:
-   file: Dockerfile
+  file: Dockerfile
  
- ports:
-   port: 8080
-   onOpen: notify
-   port: 6080
-   onOpen: notify
-   port: 3000
-   onOpen: notify
- 
- vscode:
+ports:
+  - port: 8080
+    onOpen: ignore
+  - port: 6080
+    onOpen: ignore
+  - port: 3000
+    onOpen: ignore
+
+vscode:
   extensions:
     - twxs.cmake@0.0.17:aQNzlYa74rJFJ5/BnUF1yA==
     - ms-vscode.cmake-tools@1.5.3:QI2POGDzx7mhyCmZyf/3vg==
