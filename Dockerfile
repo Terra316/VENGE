@@ -4,8 +4,6 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 libgl1
- 
-USER user
 
 RUN sudo apt install -y nvidia-driver-455
 
