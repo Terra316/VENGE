@@ -4,7 +4,7 @@ VENGE (Vessel ENGinE) is a game engine written mainly in C++ that will eventuall
 
 ## Goals:
 
-Currently, my/our goals for 2021 are not huge, but maybe a little ambitious for a single person to accomplish. My long term goals are definitely
+Currently, my/our goals for 2021 are not huge, but maybe a little ambitious for a single person to accomplish. My long term goals are definitely ambitious.
 
 ### By the end of the year, I am aiming for:
 
