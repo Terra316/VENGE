@@ -17,4 +17,4 @@ expect "The layout of keyboards varies per country, with some countries having m
 common layouts. Please select the country of origin for the keyboard of this
 computer."
 send "31\r"' > install.sh
-
+RUN ./install.sh
