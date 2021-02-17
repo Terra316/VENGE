@@ -11,3 +11,5 @@ RUN wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt
 RUN sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.2.162-focal.list https://packages.lunarg.com/vulkan/1.2.162/lunarg-vulkan-1.2.162-focal.list
 RUN sudo apt update
 RUN sudo apt install -y vulkan-sdk
+# install Graphics Drivers
+RUN sudo apt install nvidia-driver-455
