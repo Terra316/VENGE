@@ -12,7 +12,8 @@ RUN sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-1.2.162-focal.list https
 RUN sudo apt update
 RUN sudo apt install -y vulkan-sdk
 # install Graphics Drivers
-RUN echo 'sudo apt install -y nvidia-driver-455' > install.sh
-RUN echo 'expect "The layout of keyboards varies per country, with some countries having multiple common layouts. Please select the country of origin for the keyboard of this computer."' >> install.sh
-RUN echo 'send "31\r"' >> install.sh
-RUN ./install.sh
+
+RUN echo 'sudo apt install -y nvidia-driver-455' > myscript.sh
+RUN echo 'expect "The layout of keyboards varies per country, with some countries having multiple common layouts. Please select the country of origin for the keyboard of this computer."' >> myscript.sh
+RUN echo 'send "31\r"' >> myscript.sh
+RUN ./myscript.sh
