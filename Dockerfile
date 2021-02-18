@@ -3,8 +3,7 @@ FROM gitpod/workspace-full-vnc
 USER root
 
 RUN apt-get update && apt-get install -y \
-libgl1 \
-
+libgl1
 
 USER gitpod
 
