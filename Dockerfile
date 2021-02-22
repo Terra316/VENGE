@@ -4,7 +4,12 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 libgl1 \
-libx11-dev
+libx11-dev \
+libxrandr-dev \
+libxinerama-dev \
+libxcursor-dev \
+libxi-dev \
+libxext-dev
 
 USER gitpod
 
