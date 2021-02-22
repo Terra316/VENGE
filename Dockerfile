@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 libgl1 \
-libX11-dev
+libx11-dev
 
 USER gitpod
 
