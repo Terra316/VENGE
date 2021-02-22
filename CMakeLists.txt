@@ -12,3 +12,6 @@ add_subdirectory(Testing)
 
 # Editor src
 add_subdirectory(Engine-Editor)
+
+# Dependency sources
+add_subdirectory(Dependencies/glfw)

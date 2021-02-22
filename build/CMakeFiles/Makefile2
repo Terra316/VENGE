@@ -72,19 +72,106 @@ CMAKE_BINARY_DIR = /workspace/VENGE/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: Engine-Core/all
+all: Testing/all
+all: Engine-Editor/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Engine-Core/preinstall
+preinstall: Testing/preinstall
+preinstall: Engine-Editor/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: Engine-Core/clean
+clean: Testing/clean
+clean: Engine-Editor/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Engine-Core
+
+# Recursive "all" directory target.
+Engine-Core/all: Engine-Core/CMakeFiles/Core.dir/all
+
+.PHONY : Engine-Core/all
+
+# Recursive "preinstall" directory target.
+Engine-Core/preinstall:
+
+.PHONY : Engine-Core/preinstall
+
+# Recursive "clean" directory target.
+Engine-Core/clean: Engine-Core/CMakeFiles/Core.dir/clean
+
+.PHONY : Engine-Core/clean
+
+#=============================================================================
+# Directory level rules for directory Engine-Editor
+
+# Recursive "all" directory target.
+Engine-Editor/all:
+
+.PHONY : Engine-Editor/all
+
+# Recursive "preinstall" directory target.
+Engine-Editor/preinstall:
+
+.PHONY : Engine-Editor/preinstall
+
+# Recursive "clean" directory target.
+Engine-Editor/clean:
+
+.PHONY : Engine-Editor/clean
+
+#=============================================================================
+# Directory level rules for directory Testing
+
+# Recursive "all" directory target.
+Testing/all:
+
+.PHONY : Testing/all
+
+# Recursive "preinstall" directory target.
+Testing/preinstall:
+
+.PHONY : Testing/preinstall
+
+# Recursive "clean" directory target.
+Testing/clean:
+
+.PHONY : Testing/clean
+
+#=============================================================================
+# Target rules for target Engine-Core/CMakeFiles/Core.dir
+
+# All Build rule for target.
+Engine-Core/CMakeFiles/Core.dir/all:
+	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/depend
+	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
+.PHONY : Engine-Core/CMakeFiles/Core.dir/all
+
+# Build rule for subdir invocation for target.
+Engine-Core/CMakeFiles/Core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/CMakeFiles/Core.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
+.PHONY : Engine-Core/CMakeFiles/Core.dir/rule
+
+# Convenience name for target.
+Core: Engine-Core/CMakeFiles/Core.dir/rule
+
+.PHONY : Core
+
+# clean rule for target.
+Engine-Core/CMakeFiles/Core.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/clean
+.PHONY : Engine-Core/CMakeFiles/Core.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

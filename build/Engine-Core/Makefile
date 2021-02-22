@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles /workspace/VENGE/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /workspace/VENGE/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles /workspace/VENGE/build/Engine-Core//CMakeFiles/progress.marks
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,31 +116,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspace/VENGE/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Core
+# Convenience name for target.
+Engine-Core/CMakeFiles/Core.dir/rule:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/CMakeFiles/Core.dir/rule
+.PHONY : Engine-Core/CMakeFiles/Core.dir/rule
 
-# Build rule for target.
-Core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core
+# Convenience name for target.
+Core: Engine-Core/CMakeFiles/Core.dir/rule
+
 .PHONY : Core
 
 # fast build rule for target.
 Core/fast:
-	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/build
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/build
 .PHONY : Core/fast
+
+Core/Application.o: Core/Application.cpp.o
+
+.PHONY : Core/Application.o
+
+# target to build an object file
+Core/Application.cpp.o:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.o
+.PHONY : Core/Application.cpp.o
+
+Core/Application.i: Core/Application.cpp.i
+
+.PHONY : Core/Application.i
+
+# target to preprocess a source file
+Core/Application.cpp.i:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.i
+.PHONY : Core/Application.cpp.i
+
+Core/Application.s: Core/Application.cpp.s
+
+.PHONY : Core/Application.s
+
+# target to generate assembly for a file
+Core/Application.cpp.s:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.s
+.PHONY : Core/Application.cpp.s
+
+Core/Event/Key/Key.o: Core/Event/Key/Key.cpp.o
+
+.PHONY : Core/Event/Key/Key.o
+
+# target to build an object file
+Core/Event/Key/Key.cpp.o:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o
+.PHONY : Core/Event/Key/Key.cpp.o
+
+Core/Event/Key/Key.i: Core/Event/Key/Key.cpp.i
+
+.PHONY : Core/Event/Key/Key.i
+
+# target to preprocess a source file
+Core/Event/Key/Key.cpp.i:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.i
+.PHONY : Core/Event/Key/Key.cpp.i
+
+Core/Event/Key/Key.s: Core/Event/Key/Key.cpp.s
+
+.PHONY : Core/Event/Key/Key.s
+
+# target to generate assembly for a file
+Core/Event/Key/Key.cpp.s:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.s
+.PHONY : Core/Event/Key/Key.cpp.s
 
 # Help Target
 help:
@@ -151,6 +207,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Core"
+	@echo "... Core/Application.o"
+	@echo "... Core/Application.i"
+	@echo "... Core/Application.s"
+	@echo "... Core/Event/Key/Key.o"
+	@echo "... Core/Event/Key/Key.i"
+	@echo "... Core/Event/Key/Key.s"
 .PHONY : help
 
 
@@ -162,6 +224,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspace/VENGE/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

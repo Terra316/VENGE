@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/workspace/VENGE/build/Engine-Core",
+  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -g -o CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o -c /workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp",
+  "file": "/workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Engine-Core",
+  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -g -o CMakeFiles/Core.dir/Core/Application.cpp.o -c /workspace/VENGE/Engine-Core/Core/Application.cpp",
+  "file": "/workspace/VENGE/Engine-Core/Core/Application.cpp"
+}
+]

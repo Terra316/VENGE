@@ -1,0 +1,2 @@
+/bin/ar qc libCore.a CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o CMakeFiles/Core.dir/Core/Application.cpp.o
+/bin/ranlib libCore.a

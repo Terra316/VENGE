@@ -1,2 +1,9 @@
 /workspace/VENGE/build/CMakeFiles/rebuild_cache.dir
 /workspace/VENGE/build/CMakeFiles/edit_cache.dir
+/workspace/VENGE/build/Engine-Core/CMakeFiles/rebuild_cache.dir
+/workspace/VENGE/build/Engine-Core/CMakeFiles/edit_cache.dir
+/workspace/VENGE/build/Engine-Core/CMakeFiles/Core.dir
+/workspace/VENGE/build/Testing/CMakeFiles/rebuild_cache.dir
+/workspace/VENGE/build/Testing/CMakeFiles/edit_cache.dir
+/workspace/VENGE/build/Engine-Editor/CMakeFiles/rebuild_cache.dir
+/workspace/VENGE/build/Engine-Editor/CMakeFiles/edit_cache.dir

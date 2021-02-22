@@ -1,5 +1,6 @@
 
-add_library(Core)
+add_library(Core STATIC Core/Application.cpp)
+include_directories(./)
 
 find_package(Vulkan REQUIRED)
 if(Vulkan_FOUND)
@@ -11,6 +12,6 @@ else(Vulkan_FOUND)
         target_link_libraries(Core ${OPENGL_LIBRARIES})
         include_directories(${OPENGL_INCLUDE_DIRS})
     else(OPENGL_OpenGL_FOUND)
-        message("VENGE only supports Vulkan or OpenGL, both of which are apparently missing. Please install one.")
+        message("VENGE only supports Vulkan or OpenGL right now, both of which are apparently missing. Please get the Vulkan SDK (more preferable) or OpenGL.")
     endif(OPENGL_OpenGL_FOUND)
 endif(Vulkan_FOUND)

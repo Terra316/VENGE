@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Engine-Core/Core/Base.h
+../Platform/OSdetect.h
+../Engine-Core/Platform/OSdetect.h
+
+../Engine-Core/Platform/OSdetect.h
+
+/workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp
+Key.h
+/workspace/VENGE/Engine-Core/Core/Event/Key/Key.h
+
+/workspace/VENGE/Engine-Core/Core/Event/Key/Key.h
+Core/Base.h
+/workspace/VENGE/Engine-Core/Core/Event/Key/Core/Base.h
+X11/Xlib.h
+/workspace/VENGE/Engine-Core/Core/Event/Key/X11/Xlib.h
+
