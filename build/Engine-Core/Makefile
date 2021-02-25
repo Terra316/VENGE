@@ -75,6 +75,40 @@ CMAKE_BINARY_DIR = /workspace/VENGE/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +130,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -171,33 +217,6 @@ Core/Application.cpp.s:
 	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.s
 .PHONY : Core/Application.cpp.s
 
-Core/Event/Key/Key.o: Core/Event/Key/Key.cpp.o
-
-.PHONY : Core/Event/Key/Key.o
-
-# target to build an object file
-Core/Event/Key/Key.cpp.o:
-	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o
-.PHONY : Core/Event/Key/Key.cpp.o
-
-Core/Event/Key/Key.i: Core/Event/Key/Key.cpp.i
-
-.PHONY : Core/Event/Key/Key.i
-
-# target to preprocess a source file
-Core/Event/Key/Key.cpp.i:
-	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.i
-.PHONY : Core/Event/Key/Key.cpp.i
-
-Core/Event/Key/Key.s: Core/Event/Key/Key.cpp.s
-
-.PHONY : Core/Event/Key/Key.s
-
-# target to generate assembly for a file
-Core/Event/Key/Key.cpp.s:
-	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.s
-.PHONY : Core/Event/Key/Key.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,14 +224,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Core"
 	@echo "... Core/Application.o"
 	@echo "... Core/Application.i"
 	@echo "... Core/Application.s"
-	@echo "... Core/Event/Key/Key.o"
-	@echo "... Core/Event/Key/Key.i"
-	@echo "... Core/Event/Key/Key.s"
 .PHONY : help
 
 

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Core.dir/Core/Application.cpp.o"
-  "CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o"
   "libCore.a"
   "libCore.pdb"
 )

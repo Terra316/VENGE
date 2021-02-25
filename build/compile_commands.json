@@ -1,12 +1,87 @@
 [
 {
   "directory": "/workspace/VENGE/build/Engine-Core",
-  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -g -o CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o -c /workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp",
-  "file": "/workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp"
-},
-{
-  "directory": "/workspace/VENGE/build/Engine-Core",
   "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -g -o CMakeFiles/Core.dir/Core/Application.cpp.o -c /workspace/VENGE/Engine-Core/Core/Application.cpp",
   "file": "/workspace/VENGE/Engine-Core/Core/Application.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /workspace/VENGE/Dependencies/glfw/src/context.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/context.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /workspace/VENGE/Dependencies/glfw/src/init.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/init.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /workspace/VENGE/Dependencies/glfw/src/input.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/input.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /workspace/VENGE/Dependencies/glfw/src/monitor.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/monitor.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /workspace/VENGE/Dependencies/glfw/src/vulkan.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/vulkan.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /workspace/VENGE/Dependencies/glfw/src/window.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/window.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_init.c.o -c /workspace/VENGE/Dependencies/glfw/src/x11_init.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/x11_init.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /workspace/VENGE/Dependencies/glfw/src/x11_monitor.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_window.c.o -c /workspace/VENGE/Dependencies/glfw/src/x11_window.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/x11_window.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /workspace/VENGE/Dependencies/glfw/src/xkb_unicode.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_time.c.o -c /workspace/VENGE/Dependencies/glfw/src/posix_time.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/posix_time.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /workspace/VENGE/Dependencies/glfw/src/posix_thread.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/glx_context.c.o -c /workspace/VENGE/Dependencies/glfw/src/glx_context.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/glx_context.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /workspace/VENGE/Dependencies/glfw/src/egl_context.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/egl_context.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /workspace/VENGE/Dependencies/glfw/src/osmesa_context.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /workspace/VENGE/Dependencies/glfw/src/linux_joystick.c",
+  "file": "/workspace/VENGE/Dependencies/glfw/src/linux_joystick.c"
 }
 ]

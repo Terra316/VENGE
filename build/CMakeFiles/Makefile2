@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /workspace/VENGE/build
 all: Engine-Core/all
 all: Testing/all
 all: Engine-Editor/all
+all: Dependencies/glfw/all
 
 .PHONY : all
 
@@ -82,6 +83,7 @@ all: Engine-Editor/all
 preinstall: Engine-Core/preinstall
 preinstall: Testing/preinstall
 preinstall: Engine-Editor/preinstall
+preinstall: Dependencies/glfw/preinstall
 
 .PHONY : preinstall
 
@@ -89,8 +91,46 @@ preinstall: Engine-Editor/preinstall
 clean: Engine-Core/clean
 clean: Testing/clean
 clean: Engine-Editor/clean
+clean: Dependencies/glfw/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Dependencies/glfw
+
+# Recursive "all" directory target.
+Dependencies/glfw/all: Dependencies/glfw/src/all
+
+.PHONY : Dependencies/glfw/all
+
+# Recursive "preinstall" directory target.
+Dependencies/glfw/preinstall: Dependencies/glfw/src/preinstall
+
+.PHONY : Dependencies/glfw/preinstall
+
+# Recursive "clean" directory target.
+Dependencies/glfw/clean: Dependencies/glfw/CMakeFiles/uninstall.dir/clean
+Dependencies/glfw/clean: Dependencies/glfw/src/clean
+
+.PHONY : Dependencies/glfw/clean
+
+#=============================================================================
+# Directory level rules for directory Dependencies/glfw/src
+
+# Recursive "all" directory target.
+Dependencies/glfw/src/all: Dependencies/glfw/src/CMakeFiles/glfw.dir/all
+
+.PHONY : Dependencies/glfw/src/all
+
+# Recursive "preinstall" directory target.
+Dependencies/glfw/src/preinstall:
+
+.PHONY : Dependencies/glfw/src/preinstall
+
+# Recursive "clean" directory target.
+Dependencies/glfw/src/clean: Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
+
+.PHONY : Dependencies/glfw/src/clean
 
 #=============================================================================
 # Directory level rules for directory Engine-Core
@@ -153,12 +193,12 @@ Testing/clean:
 Engine-Core/CMakeFiles/Core.dir/all:
 	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/depend
 	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=1,2 "Built target Core"
 .PHONY : Engine-Core/CMakeFiles/Core.dir/all
 
 # Build rule for subdir invocation for target.
 Engine-Core/CMakeFiles/Core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/CMakeFiles/Core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
 .PHONY : Engine-Core/CMakeFiles/Core.dir/rule
@@ -172,6 +212,60 @@ Core: Engine-Core/CMakeFiles/Core.dir/rule
 Engine-Core/CMakeFiles/Core.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/clean
 .PHONY : Engine-Core/CMakeFiles/Core.dir/clean
+
+#=============================================================================
+# Target rules for target Dependencies/glfw/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+Dependencies/glfw/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/CMakeFiles/uninstall.dir/build.make Dependencies/glfw/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/CMakeFiles/uninstall.dir/build.make Dependencies/glfw/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : Dependencies/glfw/CMakeFiles/uninstall.dir/all
+
+# Build rule for subdir invocation for target.
+Dependencies/glfw/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dependencies/glfw/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
+.PHONY : Dependencies/glfw/CMakeFiles/uninstall.dir/rule
+
+# Convenience name for target.
+uninstall: Dependencies/glfw/CMakeFiles/uninstall.dir/rule
+
+.PHONY : uninstall
+
+# clean rule for target.
+Dependencies/glfw/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/CMakeFiles/uninstall.dir/build.make Dependencies/glfw/CMakeFiles/uninstall.dir/clean
+.PHONY : Dependencies/glfw/CMakeFiles/uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target Dependencies/glfw/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+Dependencies/glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target glfw"
+.PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/all
+
+# Build rule for subdir invocation for target.
+Dependencies/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dependencies/glfw/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
+.PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: Dependencies/glfw/src/CMakeFiles/glfw.dir/rule
+
+.PHONY : glfw
+
+# clean rule for target.
+Dependencies/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
