@@ -9,8 +9,7 @@ Currently, my/our goals for 2021 are not huge, but maybe a little ambitious for 
 ### By the end of the year, I am aiming for:
 
 * One finished release (located in the ``latest`` branch)
-* An internal API for core functions and connections
-* An external API for input, events, and window events
+* An API for input, events, and window events
   * 2D rendering system
 * Support for OpenGL 3.1 and up
 * Layer system
