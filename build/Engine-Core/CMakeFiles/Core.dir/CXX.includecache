@@ -45,12 +45,10 @@ GL/glu.h
 -
 OpenGL/gl.h
 -
-${OPENGL_INCLUDE_DIRS}/GL/gl.h
+GL/gl.h
 -
 GL/glext.h
 -
-
-/workspace/VENGE/Engine-Core/Core/Application.cpp
 
 /workspace/VENGE/Engine-Core/Core/Base.h
 ../Platform/OSdetect.h

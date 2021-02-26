@@ -91,18 +91,13 @@
 },
 {
   "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
   "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_demo.cpp",
   "file": "/workspace/VENGE/Dependencies/imgui/imgui_demo.cpp"
-},
-{
-  "directory": "/workspace/VENGE/build/Dependencies/imgui",
-  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_draw.cpp",
-  "file": "/workspace/VENGE/Dependencies/imgui/imgui_draw.cpp"
-},
-{
-  "directory": "/workspace/VENGE/build/Dependencies/imgui",
-  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp",
-  "file": "/workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp"
 },
 {
   "directory": "/workspace/VENGE/build/Dependencies/imgui",
@@ -111,7 +106,12 @@
 },
 {
   "directory": "/workspace/VENGE/build/Dependencies/imgui",
-  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui.cpp",
-  "file": "/workspace/VENGE/Dependencies/imgui/imgui.cpp"
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_draw.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_draw.cpp"
 }
 ]

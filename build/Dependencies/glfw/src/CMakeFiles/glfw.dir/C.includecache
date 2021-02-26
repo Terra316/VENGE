@@ -45,7 +45,7 @@ GL/glu.h
 -
 OpenGL/gl.h
 -
-${OPENGL_INCLUDE_DIRS}/GL/gl.h
+GL/gl.h
 -
 GL/glext.h
 -
