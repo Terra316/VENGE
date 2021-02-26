@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Dependencies/glfw/CMakeLists.txt"
   "../Dependencies/glfw/src/CMakeLists.txt"
   "../Dependencies/glfw/src/glfw_config.h.in"
+  "../Dependencies/imgui/CMakeLists.txt"
   "../Engine-Core/CMakeLists.txt"
   "../Engine-Editor/CMakeLists.txt"
   "../Testing/CMakeLists.txt"
@@ -74,6 +75,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Dependencies/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Dependencies/glfw/src/glfw_config.h"
   "Dependencies/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Dependencies/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -81,4 +83,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Engine-Core/CMakeFiles/Core.dir/DependInfo.cmake"
   "Dependencies/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "Dependencies/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "Dependencies/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )

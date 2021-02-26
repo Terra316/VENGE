@@ -89,17 +89,32 @@ Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Core/Application.cpp.s"
 	cd /workspace/VENGE/build/Engine-Core && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/VENGE/Engine-Core/Core/Application.cpp -o CMakeFiles/Core.dir/Core/Application.cpp.s
 
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: Engine-Core/CMakeFiles/Core.dir/flags.make
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Engine-Core/Core/Input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o"
+	cd /workspace/VENGE/build/Engine-Core && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Core.dir/Core/Input.cpp.o -c /workspace/VENGE/Engine-Core/Core/Input.cpp
+
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Core.dir/Core/Input.cpp.i"
+	cd /workspace/VENGE/build/Engine-Core && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/VENGE/Engine-Core/Core/Input.cpp > CMakeFiles/Core.dir/Core/Input.cpp.i
+
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Core.dir/Core/Input.cpp.s"
+	cd /workspace/VENGE/build/Engine-Core && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/VENGE/Engine-Core/Core/Input.cpp -o CMakeFiles/Core.dir/Core/Input.cpp.s
+
 # Object files for target Core
 Core_OBJECTS = \
-"CMakeFiles/Core.dir/Core/Application.cpp.o"
+"CMakeFiles/Core.dir/Core/Application.cpp.o" \
+"CMakeFiles/Core.dir/Core/Input.cpp.o"
 
 # External object files for target Core
 Core_EXTERNAL_OBJECTS =
 
 Engine-Core/libCore.a: Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.o
+Engine-Core/libCore.a: Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o
 Engine-Core/libCore.a: Engine-Core/CMakeFiles/Core.dir/build.make
 Engine-Core/libCore.a: Engine-Core/CMakeFiles/Core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libCore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libCore.a"
 	cd /workspace/VENGE/build/Engine-Core && $(CMAKE_COMMAND) -P CMakeFiles/Core.dir/cmake_clean_target.cmake
 	cd /workspace/VENGE/build/Engine-Core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Core.dir/link.txt --verbose=$(VERBOSE)
 

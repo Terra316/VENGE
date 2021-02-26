@@ -6,19 +6,65 @@
 
 #IncludeRegexTransform: 
 
-../Engine-Core/Core/Base.h
+../Dependencies/glfw/include/GLFW/glfw3.h
+stddef.h
+-
+stdint.h
+-
+vulkan/vulkan.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl32.h
+-
+GLES2/gl2ext.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+GL/glcorearb.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
+OpenGL/gl.h
+-
+${OPENGL_INCLUDE_DIRS}/GL/gl.h
+-
+GL/glext.h
+-
+
+/workspace/VENGE/Engine-Core/Core/Application.cpp
+
+/workspace/VENGE/Engine-Core/Core/Base.h
 ../Platform/OSdetect.h
-../Engine-Core/Platform/OSdetect.h
+/workspace/VENGE/Engine-Core/Platform/OSdetect.h
 
-../Engine-Core/Platform/OSdetect.h
+/workspace/VENGE/Engine-Core/Core/Input.cpp
+Input.h
+/workspace/VENGE/Engine-Core/Core/Input.h
 
-/workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp
-Key.h
-/workspace/VENGE/Engine-Core/Core/Event/Key/Key.h
+/workspace/VENGE/Engine-Core/Core/Input.h
+Base.h
+/workspace/VENGE/Engine-Core/Core/Base.h
+GLFW/glfw3.h
+-
 
-/workspace/VENGE/Engine-Core/Core/Event/Key/Key.h
-Core/Base.h
-/workspace/VENGE/Engine-Core/Core/Event/Key/Core/Base.h
-X11/Xlib.h
-/workspace/VENGE/Engine-Core/Core/Event/Key/X11/Xlib.h
+/workspace/VENGE/Engine-Core/Platform/OSdetect.h
 

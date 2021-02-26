@@ -214,6 +214,19 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f Dependencies/imgui/CMakeFiles/imgui.dir/build.make Dependencies/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -229,6 +242,7 @@ help:
 	@echo "... uninstall"
 	@echo "... Core"
 	@echo "... glfw"
+	@echo "... imgui"
 .PHONY : help
 
 

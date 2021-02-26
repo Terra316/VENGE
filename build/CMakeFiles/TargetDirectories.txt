@@ -37,3 +37,10 @@
 /workspace/VENGE/build/Dependencies/glfw/src/CMakeFiles/edit_cache.dir
 /workspace/VENGE/build/Dependencies/glfw/src/CMakeFiles/install/local.dir
 /workspace/VENGE/build/Dependencies/glfw/src/CMakeFiles/glfw.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/install/strip.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/install/local.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/install.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/list_install_components.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/rebuild_cache.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/edit_cache.dir
+/workspace/VENGE/build/Dependencies/imgui/CMakeFiles/imgui.dir

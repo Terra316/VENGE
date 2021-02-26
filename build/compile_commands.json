@@ -1,8 +1,13 @@
 [
 {
   "directory": "/workspace/VENGE/build/Engine-Core",
-  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -g -o CMakeFiles/Core.dir/Core/Application.cpp.o -c /workspace/VENGE/Engine-Core/Core/Application.cpp",
+  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -I/workspace/VENGE/Engine-Core/../Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/include -g -o CMakeFiles/Core.dir/Core/Application.cpp.o -c /workspace/VENGE/Engine-Core/Core/Application.cpp",
   "file": "/workspace/VENGE/Engine-Core/Core/Application.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Engine-Core",
+  "command": "/bin/g++-9  -I/workspace/VENGE/Engine-Core/. -I/workspace/VENGE/Engine-Core/../Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/include -g -o CMakeFiles/Core.dir/Core/Input.cpp.o -c /workspace/VENGE/Engine-Core/Core/Input.cpp",
+  "file": "/workspace/VENGE/Engine-Core/Core/Input.cpp"
 },
 {
   "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
@@ -83,5 +88,30 @@
   "directory": "/workspace/VENGE/build/Dependencies/glfw/src",
   "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/VENGE/Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/src -I/workspace/VENGE/build/Dependencies/glfw/src -g -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /workspace/VENGE/Dependencies/glfw/src/linux_joystick.c",
   "file": "/workspace/VENGE/Dependencies/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_demo.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_draw.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui_tables.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/workspace/VENGE/build/Dependencies/imgui",
+  "command": "/bin/g++-9  -I/workspace/VENGE/glfw -g -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/VENGE/Dependencies/imgui/imgui.cpp",
+  "file": "/workspace/VENGE/Dependencies/imgui/imgui.cpp"
 }
 ]

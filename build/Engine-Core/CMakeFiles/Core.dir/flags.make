@@ -4,7 +4,7 @@
 # compile CXX with /bin/g++-9
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspace/VENGE/Engine-Core/.
+CXX_INCLUDES = -I/workspace/VENGE/Engine-Core/. -I/workspace/VENGE/Engine-Core/../Dependencies/glfw/include -I/workspace/VENGE/Dependencies/glfw/include
 
 CXX_FLAGS = -g
 

@@ -3,8 +3,9 @@
 
 Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.o
  /workspace/VENGE/Engine-Core/Core/Application.cpp
-Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o
- ../Engine-Core/Core/Base.h
- ../Engine-Core/Platform/OSdetect.h
- /workspace/VENGE/Engine-Core/Core/Event/Key/Key.cpp
- /workspace/VENGE/Engine-Core/Core/Event/Key/Key.h
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o
+ ../Dependencies/glfw/include/GLFW/glfw3.h
+ /workspace/VENGE/Engine-Core/Core/Base.h
+ /workspace/VENGE/Engine-Core/Core/Input.cpp
+ /workspace/VENGE/Engine-Core/Core/Input.h
+ /workspace/VENGE/Engine-Core/Platform/OSdetect.h

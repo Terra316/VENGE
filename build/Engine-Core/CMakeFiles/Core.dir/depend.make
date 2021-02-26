@@ -3,8 +3,9 @@
 
 Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.o: ../Engine-Core/Core/Application.cpp
 
-Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o: ../Engine-Core/Core/Base.h
-Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o: ../Engine-Core/Platform/OSdetect.h
-Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o: ../Engine-Core/Core/Event/Key/Key.cpp
-Engine-Core/CMakeFiles/Core.dir/Core/Event/Key/Key.cpp.o: ../Engine-Core/Core/Event/Key/Key.h
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Dependencies/glfw/include/GLFW/glfw3.h
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Engine-Core/Core/Base.h
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Engine-Core/Core/Input.cpp
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Engine-Core/Core/Input.h
+Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o: ../Engine-Core/Platform/OSdetect.h
 

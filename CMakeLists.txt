@@ -15,3 +15,11 @@ add_subdirectory(Engine-Editor)
 
 # Dependency sources
 add_subdirectory(Dependencies/glfw)
+if(Vulkan_FOUND)
+    target_link_libraries(glfw ${Vulkan_LIBRARIES})
+    include_directories(glfw ${Vulkan_INCLUDE_DIRS})
+else(Vulkan_FOUND)
+    target_link_libraries(glfw ${OPENGL_LIBRARIES})
+    include_directories(glfw ${OPENGL_INCLUDE_DIRS})
+endif(Vulkan_FOUND)
+add_subdirectory(Dependencies/imgui)

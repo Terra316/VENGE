@@ -76,6 +76,7 @@ all: Engine-Core/all
 all: Testing/all
 all: Engine-Editor/all
 all: Dependencies/glfw/all
+all: Dependencies/imgui/all
 
 .PHONY : all
 
@@ -84,6 +85,7 @@ preinstall: Engine-Core/preinstall
 preinstall: Testing/preinstall
 preinstall: Engine-Editor/preinstall
 preinstall: Dependencies/glfw/preinstall
+preinstall: Dependencies/imgui/preinstall
 
 .PHONY : preinstall
 
@@ -92,6 +94,7 @@ clean: Engine-Core/clean
 clean: Testing/clean
 clean: Engine-Editor/clean
 clean: Dependencies/glfw/clean
+clean: Dependencies/imgui/clean
 
 .PHONY : clean
 
@@ -131,6 +134,24 @@ Dependencies/glfw/src/preinstall:
 Dependencies/glfw/src/clean: Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
 
 .PHONY : Dependencies/glfw/src/clean
+
+#=============================================================================
+# Directory level rules for directory Dependencies/imgui
+
+# Recursive "all" directory target.
+Dependencies/imgui/all: Dependencies/imgui/CMakeFiles/imgui.dir/all
+
+.PHONY : Dependencies/imgui/all
+
+# Recursive "preinstall" directory target.
+Dependencies/imgui/preinstall:
+
+.PHONY : Dependencies/imgui/preinstall
+
+# Recursive "clean" directory target.
+Dependencies/imgui/clean: Dependencies/imgui/CMakeFiles/imgui.dir/clean
+
+.PHONY : Dependencies/imgui/clean
 
 #=============================================================================
 # Directory level rules for directory Engine-Core
@@ -190,15 +211,15 @@ Testing/clean:
 # Target rules for target Engine-Core/CMakeFiles/Core.dir
 
 # All Build rule for target.
-Engine-Core/CMakeFiles/Core.dir/all:
+Engine-Core/CMakeFiles/Core.dir/all: Dependencies/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/depend
 	$(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=1,2 "Built target Core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=1,2,3 "Built target Core"
 .PHONY : Engine-Core/CMakeFiles/Core.dir/all
 
 # Build rule for subdir invocation for target.
 Engine-Core/CMakeFiles/Core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine-Core/CMakeFiles/Core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
 .PHONY : Engine-Core/CMakeFiles/Core.dir/rule
@@ -247,7 +268,7 @@ Dependencies/glfw/CMakeFiles/uninstall.dir/clean:
 Dependencies/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target glfw"
 .PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -266,6 +287,33 @@ glfw: Dependencies/glfw/src/CMakeFiles/glfw.dir/rule
 Dependencies/glfw/src/CMakeFiles/glfw.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
 .PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/clean
+
+#=============================================================================
+# Target rules for target Dependencies/imgui/CMakeFiles/imgui.dir
+
+# All Build rule for target.
+Dependencies/imgui/CMakeFiles/imgui.dir/all:
+	$(MAKE) $(MAKESILENT) -f Dependencies/imgui/CMakeFiles/imgui.dir/build.make Dependencies/imgui/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f Dependencies/imgui/CMakeFiles/imgui.dir/build.make Dependencies/imgui/CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspace/VENGE/build/CMakeFiles --progress-num=21,22,23,24,25,26 "Built target imgui"
+.PHONY : Dependencies/imgui/CMakeFiles/imgui.dir/all
+
+# Build rule for subdir invocation for target.
+Dependencies/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dependencies/imgui/CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/VENGE/build/CMakeFiles 0
+.PHONY : Dependencies/imgui/CMakeFiles/imgui.dir/rule
+
+# Convenience name for target.
+imgui: Dependencies/imgui/CMakeFiles/imgui.dir/rule
+
+.PHONY : imgui
+
+# clean rule for target.
+Dependencies/imgui/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Dependencies/imgui/CMakeFiles/imgui.dir/build.make Dependencies/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : Dependencies/imgui/CMakeFiles/imgui.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

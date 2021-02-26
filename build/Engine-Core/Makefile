@@ -217,6 +217,33 @@ Core/Application.cpp.s:
 	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Application.cpp.s
 .PHONY : Core/Application.cpp.s
 
+Core/Input.o: Core/Input.cpp.o
+
+.PHONY : Core/Input.o
+
+# target to build an object file
+Core/Input.cpp.o:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.o
+.PHONY : Core/Input.cpp.o
+
+Core/Input.i: Core/Input.cpp.i
+
+.PHONY : Core/Input.i
+
+# target to preprocess a source file
+Core/Input.cpp.i:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.i
+.PHONY : Core/Input.cpp.i
+
+Core/Input.s: Core/Input.cpp.s
+
+.PHONY : Core/Input.s
+
+# target to generate assembly for a file
+Core/Input.cpp.s:
+	cd /workspace/VENGE/build && $(MAKE) $(MAKESILENT) -f Engine-Core/CMakeFiles/Core.dir/build.make Engine-Core/CMakeFiles/Core.dir/Core/Input.cpp.s
+.PHONY : Core/Input.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,6 +260,9 @@ help:
 	@echo "... Core/Application.o"
 	@echo "... Core/Application.i"
 	@echo "... Core/Application.s"
+	@echo "... Core/Input.o"
+	@echo "... Core/Input.i"
+	@echo "... Core/Input.s"
 .PHONY : help
 
 

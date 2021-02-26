@@ -1,2 +1,2 @@
-/bin/ar qc libCore.a CMakeFiles/Core.dir/Core/Application.cpp.o
+/bin/ar qc libCore.a CMakeFiles/Core.dir/Core/Application.cpp.o CMakeFiles/Core.dir/Core/Input.cpp.o
 /bin/ranlib libCore.a
